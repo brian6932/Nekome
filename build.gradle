@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.detekt)
     alias(libs.plugins.kover)
     alias(libs.plugins.ktlint)
+    alias(libs.plugins.modulegraph)
 
     alias(libs.plugins.aboutlibraries) apply false
     alias(libs.plugins.android.application) apply false
@@ -97,6 +98,13 @@ koverMerged {
             )
         }
     }
+}
+
+moduleGraphConfig {
+    readmePath = "README.md"
+    heading = '## Dependency Diagram'
+    // theme = Theme.NEUTRAL // optional
+    // orientation = Orientation.LEFT_TO_RIGHT // optional
 }
 
 ext {
