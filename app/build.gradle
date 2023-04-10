@@ -60,7 +60,7 @@ dependencies {
     implementation project(":features:search")
     implementation project(":features:series")
     implementation project(":features:settings")
-    implementation project(":libraries:core")
+    implementation project(':libraries:coreold')
     implementation project(":libraries:database")
     implementation project(":libraries:datasource:activity")
     implementation project(":libraries:datasource:auth")

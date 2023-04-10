@@ -22,8 +22,7 @@ android {
 }
 
 dependencies {
-    implementation project(":libraries:core")
-
+    implementation project(':libraries:coreold')
     implementation libs.google.hilt.android
     implementation libs.kotlin.coroutines.android
     implementation libs.kotlin.coroutines.core

@@ -23,7 +23,7 @@ android {
 }
 
 dependencies {
-    implementation project(":libraries:core")
+    implementation project(':libraries:coreold')
     implementation project(":libraries:database")
 
     implementation libs.google.hilt.android

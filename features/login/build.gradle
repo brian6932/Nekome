@@ -35,7 +35,7 @@ android {
 dependencies {
     implementation project(":core:compose")
     implementation project(":core:resources")
-    implementation project(":libraries:core")
+    implementation project(':libraries:coreold')
     implementation project(":libraries:datasource:auth")
     implementation project(":libraries:datasource:series")
     implementation project(":libraries:datasource:user")

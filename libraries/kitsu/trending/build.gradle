@@ -24,7 +24,7 @@ android {
 }
 
 dependencies {
-    implementation project(":libraries:core")
+    implementation project(':libraries:coreold')
     implementation project(':libraries:datasource:trending')
     implementation project(':libraries:kitsu')
 

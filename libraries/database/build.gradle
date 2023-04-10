@@ -37,8 +37,7 @@ android {
 }
 
 dependencies {
-    implementation project(":libraries:core")
-
+    implementation project(':libraries:coreold')
     implementation libs.androidx.appcompat
     implementation libs.androidx.core
     implementation libs.androidx.room

@@ -26,7 +26,7 @@ android {
 
 dependencies {
     implementation project(":core:resources")
-    implementation project(":libraries:core")
+    implementation project(':libraries:coreold')
 
     implementation libs.androidx.appcompat
     implementation libs.androidx.datastore.preferences

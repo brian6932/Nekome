@@ -23,5 +23,6 @@ android {
 }
 
 dependencies {
-    implementation project(':libraries:core')
+    implementation project(':libraries:coreold')
 }
+
