@@ -53,7 +53,6 @@ graph LR
     compose
     preferences
     resources
-    core
   end
   subgraph features
     login
@@ -62,7 +61,7 @@ graph LR
     settings
   end
   subgraph libraries
-    core
+    coreold
     database
     kitsu
   end
@@ -84,122 +83,122 @@ graph LR
     user
   end
   preferences --> resources
-  preferences --> core
+  preferences --> coreold
   preferences --> resources
-  preferences --> core
+  preferences --> coreold
   preferences --> resources
-  preferences --> core
+  preferences --> coreold
   preferences --> resources
-  preferences --> core
-  series --> core
+  preferences --> coreold
+  series --> coreold
   series --> database
   series --> testing
   settings --> compose
   settings --> preferences
   settings --> resources
-  settings --> core
+  settings --> coreold
   settings --> compose
   settings --> preferences
   settings --> resources
-  settings --> core
+  settings --> coreold
   settings --> compose
   settings --> preferences
   settings --> resources
-  settings --> core
+  settings --> coreold
   settings --> compose
   settings --> preferences
   settings --> resources
-  settings --> core
+  settings --> coreold
   settings --> testing
-  core --> resources
-  core --> testing
   login --> compose
   login --> resources
-  login --> core
+  login --> coreold
   login --> auth
   login --> series
   login --> user
   login --> compose
   login --> resources
-  login --> core
+  login --> coreold
   login --> auth
   login --> series
   login --> user
   login --> compose
   login --> resources
-  login --> core
+  login --> coreold
   login --> auth
   login --> series
   login --> user
   login --> compose
   login --> resources
-  login --> core
+  login --> coreold
   login --> auth
   login --> series
   login --> user
   login --> testing
-  kitsu --> core
+  kitsu --> coreold
   kitsu --> auth
   kitsu --> testing
-  auth --> core
+  auth --> coreold
   auth --> kitsu
   auth --> testing
   search --> compose
   search --> preferences
   search --> resources
-  search --> core
+  search --> coreold
   search --> series
   search --> compose
   search --> preferences
   search --> resources
-  search --> core
+  search --> coreold
   search --> series
   search --> compose
   search --> preferences
   search --> resources
-  search --> core
+  search --> coreold
   search --> series
   search --> compose
   search --> preferences
   search --> resources
-  search --> core
+  search --> coreold
   search --> series
   search --> testing
-  database --> core
+  database --> coreold
   database --> testing
-  trending --> core
-  search --> core
-  testing --> core
+  trending --> coreold
+  search --> coreold
+  testing --> coreold
   testing --> database
   testing --> series
   testing --> user
+  coreold --> resources
+  coreold --> testing
   auth --> preferences
-  auth --> core
+  auth --> coreold
   auth --> testing
-  trending --> core
+  trending --> coreold
   trending --> kitsu
   trending --> testing
-  user --> core
+  user --> coreold
   user --> database
   user --> testing
   series --> compose
   series --> preferences
   series --> resources
-  series --> core
+  series --> coreold
   series --> compose
   series --> preferences
   series --> resources
-  series --> core
+  series --> coreold
   series --> compose
   series --> preferences
   series --> resources
-  series --> core
+  series --> coreold
   series --> compose
   series --> preferences
   series --> resources
-  series --> core
+  series --> coreold
   series --> testing
-  activity --> core
+  activity --> coreold
   app --> testing
   app --> compose
   app --> preferences
@@ -208,7 +207,7 @@ graph LR
   app --> search
   app --> series
   app --> settings
-  app --> core
+  app --> coreold
   app --> database
   app --> activity
   app --> auth
@@ -230,7 +229,7 @@ graph LR
   app --> search
   app --> series
   app --> settings
-  app --> core
+  app --> coreold
   app --> database
   app --> activity
   app --> auth
@@ -252,7 +251,7 @@ graph LR
   app --> search
   app --> series
   app --> settings
-  app --> core
+  app --> coreold
   app --> database
   app --> activity
   app --> auth
@@ -274,7 +273,7 @@ graph LR
   app --> search
   app --> series
   app --> settings
-  app --> core
+  app --> coreold
   app --> database
   app --> activity
   app --> auth
@@ -290,17 +289,17 @@ graph LR
   app --> trending
   app --> user
   app --> testing
-  search --> core
+  search --> coreold
   search --> kitsu
   search --> testing
-  activity --> core
+  activity --> coreold
   activity --> kitsu
   activity --> testing
-  library --> core
+  library --> coreold
   library --> series
   library --> kitsu
   library --> testing
-  user --> core
+  user --> coreold
   user --> kitsu
   user --> testing
 
